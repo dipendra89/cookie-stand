@@ -1,0 +1,39 @@
+body{
+    background-color:rgb(243, 238, 230);  
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+header{
+    text-decoration: underline;
+    padding: 10px;
+    margin: 1% 5% 0% 5%;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(53, 39, 36);
+    text-align: center;
+    display: inline-block;
+}
+
+header h1{
+    padding: 0px 100px 0px 100px;
+    text-align: center;
+}
+
+#introAboutPatShop {
+    position: fixed;     
+    text-align: center; 
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    font-stretch: extra-expanded;
+    top: 35%; 
+    width: 100%;
+  }
+
+#moreInfo {
+    position: fixed;     
+    text-align: center;    
+    bottom: 5%; 
+    width: 100%;
+  }
