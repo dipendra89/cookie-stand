@@ -11,7 +11,7 @@ var location1 = {
     avgCookies: 6.3,
     customerPerHour: function(min, max){
         var randomNum = Math.floor(Math.random() * (max - min)) + min;
-        //console.log(`Random Number`);
+        //console.log(`Random Customer number`);
         return randomNum;
     },
     dailySales: function(arr){
@@ -21,7 +21,7 @@ var location1 = {
         
         for (var i = 0; i < arr.length; i++){
             var cookiesSales = this.customerPerHour(this.minCustomers, this.maxCustomers);
-            var hourlySales = Math.round(cookiesSales * this.avgCookies);
+            var hourlySales = Math.round(cookiesSales * this.avgCookies);  // we use 'round' so that we don't get the portion of the cookies
             arrayResult[i] = `${arr[i]}: ${hourlySales} cookies`;
             cookiesPerHour = cookiesPerHour + `\n${arr[i]}: ${hourlySales} cookies`
             totalCookies = totalCookies + hourlySales;
@@ -143,7 +143,7 @@ var location5 = {
             var cookiesSales = this.customerPerHour(this.minCustomers, this.maxCustomers);
             var hourlySales = Math.round(cookiesSales * this.avgCookies);
             arrayResult[i] = `${arr[i]}: ${hourlySales} cookies`;
-            cookiesPerHour = cookiesPerHour + `\n${arr[i]}: ${hourlySales} cookies`
+            cookiesPerHour = cookiesPerHour + `\n${arr[i]}: ${hourlySales} cookies`;
             totalCookies = totalCookies + hourlySales;
         }
         arrayResult.push(`Total: ${totalCookies} cookies`);
