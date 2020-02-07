@@ -46,14 +46,27 @@ new PatsCookieSale('Tokyo', 3, 24, 3.7);
 new PatsCookieSale('Dubai', 11, 38, 3.7);
 new PatsCookieSale('Paris', 20, 38, 2.3);
 new PatsCookieSale('Lima', 2, 16, 4.6);
+console.log(allStores);
 
-console.log(allStores[0].cookiesPerHour());
-console.log(allStores[0].render());
-console.log(allStores[1].cookiesPerHour());
+console.log(allStores[0].calculateCustomer());
+allStores[0].cookiesPerHour();
+allStores[0].render();
+
+console.log(allStores[1].calculateCustomer());
+allStores[1].cookiesPerHour();
+allStores[1].render();
+
 console.log(allStores[2].cookiesPerHour());
-console.log(allStores[3].cookiesPerHour());
+allStores[2].cookiesPerHour();
+allStores[2].render();
 
-console.log(allStores[0].dailyCookieSales);
+console.log(allStores[3].cookiesPerHour());
+allStores[3].cookiesPerHour();
+allStores[3].render();
+
+console.log(allStores[4].cookiesPerHour());
+allStores[4].cookiesPerHour();
+allStores[4].render();
 // console.log(allStores);
 
 
@@ -292,10 +305,13 @@ console.log(allStores[0].dailyCookieSales);
 
 // console.log(location5.locationName +"; " + location5.dailySales(hoursOfOperation));
 
-// // Calculating daily sales per location
+
+
+
+// Calculating daily sales per location
 
 // var salesSection = document.getElementById('dailySalesPerLocation');
-// // Creating report
+// Creating report
 // for(var i = 0; i<businessLocations.length; i++){
 
 //     var objectName = `location${i+1}`;
@@ -306,20 +322,20 @@ console.log(allStores[0].dailyCookieSales);
 //     salesSection.appendChild(reportElement);
 
 
-//     var headerElement = document.createElement('h2');
-//     headerElement.textContent = businessLocations[i];
-//     headerElement.id = 'location';
-//     reportElement.appendChild(headerElement);
+    // var headerElement = document.createElement('h2');
+    // headerElement.textContent = businessLocations[i];
+    // headerElement.id = 'location';
+    // reportElement.appendChild(headerElement);
     
-//     // Creating list/appending
-//     var listElement = document.createElement('ol');
-//     listElement.id = 'hourlySales';
-//     reportElement.appendChild(listElement);
+    // Creating list/appending
+    // var listElement = document.createElement('ol');
+    // listElement.id = 'hourlySales';
+    // reportElement.appendChild(listElement);
 
-//     // Using loop here then appending
-//     for (var j = 0; j < arrHourlyOutput.length; j++){
-//         var hourItem = document.createElement('li');
-//         hourItem.textContent = arrHourlyOutput[j];
-//         listElement.appendChild(hourItem);
-//     };
-// }
+    // Using loop here then appending
+    // for (var j = 0; j < arrHourlyOutput.length; j++){
+    //     var hourItem = document.createElement('li');
+    //     hourItem.textContent = arrHourlyOutput[j];
+    //     listElement.appendChild(hourItem);
+    // };
+//}
