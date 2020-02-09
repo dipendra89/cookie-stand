@@ -1,29 +1,112 @@
 
-h1{
-    background-color: aquamarine;
-    font-size: 25px;
+main{
     text-align: center;
-    padding: 20px;
-    font-weight: bolder;
+    /* margin-top: 10px; */
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    max-width: 960;
+    height: 472px;
+    margin-bottom: 2.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    #formData{
+        background-color: rgb(166, 166, 184);
+        border: 1px solid BLACK;
+        margin-top: 125px;
+        height: 35%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #formData  h2{
+        background-color: rgb(166, 166, 184);
+        padding: 5px;
+        font-size: 18px;
+        text-align: left;
+        color: white;
+    }
+
+table{
+    text-align: center;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-#reportPerLocation{
-    text-decoration: underline;
-    margin: 50px;
-    display: inline-block;
-}
-
-#location{
-    font-size: 18px;
-    font-weight: bold;
-    background-color: lightblue;
-    border-bottom: black 2px solid;
-    padding: 5px 0px 5px 0px;
+#salesTableHeader th{
+    padding: 10px;
+    border: black 2px solid;
+    background-color:  rgb(166, 166, 184);
+    color: white;
+    /* max-width: 10%; */
     text-align: center;
 }
 
-li{
-    padding: 3px 15px 3px 15px;
+
+/* TABLE BODY (TR: BY EACH LOCATION) */
+
+
+#salesByLocation th{
+    width: 10%;
+    font-size: 16px;
     text-align: left;
+    background-color: rgb(166, 166, 184);
+    color: white;
+    padding: 7.5px;
+    border: black 2px solid;
+}
+
+#salesByLocation td{
+    border: black 2px solid;
+    padding-top: .5%;
+    padding-bottom: .25%;
+    font-style: italic;
+    /* padding: 5px; */
+    width: fit-content;
+}
+
+#locationTotals{
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    border-bottom: black 2px solid;
+    text-align: center;
+}
+
+
+#salesTableTotal th {
+    background-color: rgb(166, 166, 184);
+    border: black 2PX solid;
+}
+
+
+#salesTableTotal td{
+    font-size: 24px;
+    color: green;
+    width: fit-content;
+    padding: 10PX;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: black 2PX solid;
+    background-color: rgb(166, 166, 184);
+
+}
+
+#grandTotal{
+    font-size: 30px;
+    padding: 10PX;
+    color: red;
+    width: fit-content;
+}
+
+
+
+
+
+
+#user-form {
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
