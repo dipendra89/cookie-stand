@@ -1,6 +1,5 @@
 'use strict';
 
-
 var hoursOfOperation = ['6am', '7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 var businessLocations = ['Seattle','Tokyo','Dubai','Paris','Lima'];
 var allStores = [];
@@ -54,7 +53,7 @@ PatsCookieSale.prototype.render = function(){
     tableBody.appendChild(tableRow);
 
     var rowHeader = document.createElement('th');   // create a row header
-    rowHeader.textContent = this.name;              // add the location name to the row header
+    rowHeader.textContent = this.location;              // add the location name to the row header
     tableRow.appendChild(rowHeader);                  // add the row header to my row
     var col = 1;
 
@@ -76,7 +75,7 @@ new PatsCookieSale('Dubai', 11, 38, 3.7);
 new PatsCookieSale('Paris', 20, 38, 2.3);
 new PatsCookieSale('Lima', 2, 16, 4.6);
 
-
+// Footer
 function tableFooterSetup(){
 
   var tblFooter = document.getElementById('salesTableTotal');
@@ -123,7 +122,7 @@ function addLocation(event){
     var locationMin = parseInt(event.target.elMin.value);
     var locationAvg = parseInt(event.target.elAvg.value);
 
-    new Location(locationName,locationMin, locationMax, locationAvg);
+    new PatsCookieSale(locationName,locationMin, locationMax, locationAvg);
     
     var x = allStores.length-1;
 
@@ -138,26 +137,4 @@ function addLocation(event){
     event.target.elMax.value = null;
     event.target.elMin.value = null;
     event.target.elAvg.value = null;
-}
-
-
-var userData = [];
-
-var userForm = document.getElementById('user-form');
-
-userForm.addEventListener('submit', handleSubmit);
-
-function handleSubmit(e) {
-    event.preventDefault();
-    var name = e.target.storeName.value;
-    var age = e.target.minCust.value;
-    var email = e.target.maxCust.value;
-
-    userData.push(name, age, email);
-
-    console.log(name, age, email);
-
-    e.target.storeName.value = null;
-    e.target.minCust.value = null;
-    e.target.maxCust.value = null;
 }

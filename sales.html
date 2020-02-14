@@ -23,41 +23,37 @@
                         <!-- Header Row -->
                     </thead>
                     <tbody id="salesByLocation">
-                        <!-- Adding per Location
-                        <tr>   
-                            <th></th>
-                            <td></td>
-                        </tr> -->
+
                     </tbody>
                     <tfoot id="salesTableTotal">
-                        <!-- Total row gets added when complete
-                        <tr>   
-                            <th></th>
-                            <td></td>
-                        </tr> -->
+
                     </tfoot>
                 </table>
             </section>
 <br>
 <br>
-<br>
-
-            <form id="user-form">
-                <fieldset>
-                    <label>Enter the location of Store:</label>
-                    <input id="storeName" type="text" placeholder="Store's name goes here">
-                    
-                    <label>Enter Age Here:</label>
-                    <input id="minCust" type="text" placeholder="Minimum Customer Goes Header">
-    
-                    <label>Enter Email Here:</label>
-                    <input id="maxCust" type="text" placeholder="Maximum Customer Goes here">
-    
-                    <button value="submit">Submit</button>
-                </fieldset>
-    
-            </form>
+<br>         
+<section id="formData">
+    <h2>Enter Informations Bellow to Add New Location</h2>
+    <form id="locationAdd-form">
+        <fieldset id='locationAdd-fs'>
+            <label>Location City:</label>
+            <input id='elCity' type='text' placeholder='Name of City'></input>
             
+                <div id='CustomerInfo'>
+                    <label>Max Customers:</label>
+                    <input id='elMax' type='text' placeholder='Enter Max Cust Per Hour'></input>
+                    <label>Min Customers:</label>
+                    <input id='elMin' type='text' placeholder='Enter Min Cust Per Hour'></input>                            
+                    <label>Avg Cookies Sold:</label>
+                    <input id='elAvg' type='text' placeholder='Avg Cookies Per Cust'></input>                            
+                </div>
+    
+            <button >Add Location</button>    
+        </fieldset>
+    </form>
+    </section>
+
         </main>
         <script type="text/javascript" src=js/app.js></script> 
     </body>
